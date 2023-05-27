@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Gurnaj Singh">
+        <title>Eduford</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/1837d4c2b7.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="main-header">
+            <nav>
+                <a href="../Home/index.html" class="main-logo"><img src="../images/logo.png" alt="logo"></a>
+                <div class="side-links" id="sideLinks">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul class="list-items">
+                        <li class="list-item"><a href="../Home/index.html">HOME</a></li>
+                        <li class="list-item"><a href="../About/index.html">ABOUT</a></li>
+                        <li class="list-item"><a href="../Course/index.html">COURSE</a></li>
+                        <li class="list-item"><a href="index.html">BLOG</a></li>
+                        <li class="list-item"><a href="../Contact/index.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Our Certificate & Online Programs For 2021</h1>
+        </header>
+
+        <main>
+            <section>
+                <div class="blog-container">
+                    <div class="left">
+                        <img src="../images/certificate.jpg" alt="">
+                        <h2>Our Certificate & Online Programs For 2021</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt a alias natus assumenda labore asperiores maxime cumque. Porro asperiores assumenda similique? Distinctio quae nihil eligendi ex aperiam dolor incidunt veniam temporibus perferendis voluptas? Aliquam, laborum harum commodi magni reiciendis vitae molestiae est! Natus, sapiente omnis quia aliquam distinctio repellendus quaerat.</p>
+                        <br />
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel perspiciatis, facere magni veritatis voluptatum atque consequuntur aliquid voluptatem amet, ex harum quia vero, in eum esse aliquam consequatur corrupti officiis est animi enim.</p>
+                        <br />
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates reprehenderit molestiae expedita possimus obcaecati laudantium incidunt, repellat voluptate ipsum perspiciatis? Nihil magnam adipisci ab. Et similique corporis quis, iusto laudantium sequi, ea, tenetur nisi qui quam ad repellendus incidunt delectus? Inventore voluptates ut, eos aliquid libero nobis explicabo aperiam officia.</p>
+                        <br />
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus asperiores eveniet nostrum voluptatibus nemo deserunt totam maiores dicta distinctio repellat neque explicabo facere rem iste nihil ipsam molestiae dolores consectetur reprehenderit perspiciatis, nulla obcaecati? Corporis quis voluptate ex eius voluptatem iste, nisi molestiae, aspernatur quaerat autem earum dicta? Assumenda, quibusdam fuga doloremque suscipit at commodi eius minima corrupti quam voluptas!</p>
+                        <br />
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illo alias sint accusantium nisi officia asperiores! Officia doloremque iste rem fuga adipisci eum asperiores eveniet ducimus, doloribus, odio esse delectus.</p>
+                        <div class="comment-box">
+                            <h3>Leave a Comment</h3>
+                            <form action="" method="POST">
+                                <label><input name="Name" type="text" placeholder="Enter Name"></label>
+                                <br />
+                                <label><input type="email" name="Email-Id" placeholder="Enter Email"></label>
+                                <br />
+                                <label>
+                                    <textarea name="Comment" placeholder="Your Comment"></textarea>
+                                </label>
+                                <br />
+                                <button type="submit">POST COMMENT</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h3>Post Categories</h3>
+                        <table>
+                            <tbody>
+                                <tr><th scope="row">Business Analytics</th><td>21</td></tr>
+                                <tr><th scope="row">Data Science</th><td>28</td></tr>
+                                <tr><th scope="row">Machine Learning</th><td>15</td></tr>
+                                <tr><th scope="row">Computer Science</th><td>34</td></tr>
+                                <tr><th scope="row">AutoCAD</th><td>42</td></tr>
+                                <tr><th scope="row">Journalism</th><td>22</td></tr>
+                                <tr><th scope="row">Commerce</th><td>13</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <h3>Eduford</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit eos minima velit accusamus totam eaque<br />amet consectetur adipisicing eli ut necessitatibus nam veritatis</p>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <h4 class="author">Made with <i class="far fa-heart"></i> by Gurnaj Singh</h4>
+        </footer>
+
+        <!-- Javascript for Hamburger Menu -->
+        <script>
+            var sideLinks=document.getElementById("sideLinks");
+
+            function showMenu()
+            {
+                sideLinks.style.right="0";
+            }
+
+            function hideMenu()
+            {
+                sideLinks.style.right="-200px";
+            }
+        </script>
+    </body>
+</html>

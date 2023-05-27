@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Gurnaj Singh">
+        <title>Eduford</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/1837d4c2b7.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="main-header">
+            <nav>
+                <a href="../Home/index.html" class="main-logo"><img src="../images/logo.png" alt="logo"></a>
+                <div class="side-links" id="sideLinks">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul class="list-items">
+                        <li class="list-item"><a href="../Home/index.html">HOME</a></li>
+                        <li class="list-item"><a href="../About/index.html">ABOUT</a></li>
+                        <li class="list-item"><a href="../Course/index.html">COURSE</a></li>
+                        <li class="list-item"><a href="../Blog/index.html">BLOG</a></li>
+                        <li class="list-item"><a href="index.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Contact Us</h1>
+        </header>
+
+        <main>
+            <section class="google-maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12703.29419467126!2d77.55048333620365!3d13.011596593440212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1639548533673!5m2!1sen!2sin"   allowfullscreen="" loading="lazy"></iframe>
+            </section>
+
+            <section class="contact-info">
+                <div class="left">
+                    <div>
+                        <i class="fas fa-home"></i>
+                        <span>
+                            <h5>Xyz Road, Abc Building</h5>
+                            <p>Banglore, Karnataka, IN</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>
+                            <h5>+1 0123456789</h5>
+                            <p>Monday to Saturday, 10Am to 6PM</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="far fa-envelope"></i>
+                        <span>
+                            <h5>gurnajsingh81@gmail.com</h5>
+                            <p>Email us your query</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="right">
+                    <form action="">
+                        <label><input type="text" name="Name" placeholder="Enter your name"></label>
+                        <br />
+                        <label><input type="email" name="Email-Id" placeholder="Enter email address"></label>
+                        <br />
+                        <label><input type="text" name="Subject" placeholder="Enter your subject"></label>
+                        <br />
+                        <label><textarea name="Message" placeholder="Message"></textarea></label>
+                        <br />
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <h3>Eduford</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit eos minima velit accusamus totam eaque<br />amet consectetur adipisicing eli ut necessitatibus nam veritatis</p>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <h4 class="author">Made with <i class="far fa-heart"></i> by Gurnaj Singh</h4>
+        </footer>
+
+        <!-- Javascript for Hamburger Menu -->
+        <script>
+            var sideLinks=document.getElementById("sideLinks");
+
+            function showMenu()
+            {
+                sideLinks.style.right="0";
+            }
+
+            function hideMenu()
+            {
+                sideLinks.style.right="-200px";
+            }
+        </script>
+    </body>
+</html>

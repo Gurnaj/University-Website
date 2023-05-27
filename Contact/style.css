@@ -1,0 +1,116 @@
+.google-maps
+{
+    width:80%;
+    margin:80px auto;
+}
+
+.google-maps iframe
+{
+    width:100%;
+    height:60vh;
+    border:none;
+    outline:0;
+}
+
+.contact-info
+{
+    display:flex;
+    width:80%;
+    margin:0px auto 60px;
+    align-items:center;
+}
+
+.left
+{
+    flex-basis:48%;
+}
+
+.left div
+{
+    display:flex;
+    margin-bottom:20px;
+}
+
+.left .fas,.left .far
+{
+    color:red;
+}
+
+.left span
+{
+    margin-left:20px;
+}
+
+.left p
+{
+    font-size:13px;
+    color:#777;
+}
+
+.right
+{
+    flex-basis:48%;
+}
+
+.right form
+{
+    width:100%;
+}
+
+.right input,.right textarea
+{
+    width:100%;
+    margin-bottom:20px;
+    padding:4px;
+    outline:0;
+    border:1px solid #777;
+    border-radius:2px;
+    transition:0.15s;
+}
+
+.right textarea
+{
+    height:100px;
+}
+
+.right button
+{
+    background:red;
+    outline:0;
+    border:none;
+    padding:8px 6px;
+    border:2px solid red;
+    font-weight:bold;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.right button:hover
+{
+    background:white;
+    color:red;
+}
+
+.right input:focus,.right textarea:focus
+{
+    box-shadow:0 0 0 6px rgba(252, 19, 19, 0.25);
+}
+
+@media screen and (max-width:700px)
+{
+    .contact-info
+    {
+        flex-direction:column;
+    }
+
+    .google-maps
+    {
+        margin-bottom:30px;
+    }
+
+    .right
+    {
+        margin-top:60px;
+    }
+}

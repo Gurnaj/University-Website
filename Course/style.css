@@ -1,0 +1,134 @@
+.courses
+{
+    width:80%;
+    margin:auto;
+    margin-top:80px;
+    text-align:center;
+}
+
+.courses h1
+{
+    font-size:30px;
+    font-weight:600;
+}
+
+.courses p
+{
+    color:#777;
+    font-size:14px;
+    font-weight:350;
+    line-height:22px;
+    padding:10px;
+}
+
+.course-container
+{
+    margin-top:5%;
+    display:flex;
+    justify-content:space-between;
+}
+
+.course
+{
+    flex-basis:31%;
+    background:#faebeb;
+    border-radius:10px;
+    margin-bottom:5%;
+    padding:20px 12px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.course h3
+{
+    font-weight:600;
+    margin:10px 0px;
+}
+
+.course:hover
+{
+    box-shadow:0 0 20px 0px rgba(0,0,0,0.4);
+    cursor:default;
+}
+
+.facilities
+{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    margin-top:60px;
+}
+
+.facilities h1
+{
+    font-size:30px;
+    font-weight:600;
+}
+
+.facilities p
+{
+    color:#777;
+    font-size:14px;
+    font-weight:300;
+    line-height:22px;
+    padding:10px;
+}
+
+.facilities-container
+{
+    margin-top:60px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.facility
+{
+    flex-basis:32%;
+}
+
+.facility img
+{
+    width:100%;
+    border-radius:10px;
+}
+
+.facility-overview
+{
+    margin-top:15px;
+    text-align:left;
+}
+
+.facility-overview h3
+{
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.facility-overview p
+{
+    padding:0px;
+}
+
+@media screen and (max-width:700px)
+{
+
+    .course-container
+    {
+        flex-direction:column;
+    }
+
+    .facilities-container
+    {
+        flex-direction:column;
+    }
+
+    .facility
+    {
+        margin-bottom:40px;
+    }
+}
+
+footer
+{
+    margin-top:60px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Gurnaj Singh">
+        <title>Eduford</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/1837d4c2b7.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="main-header">
+            <nav>
+                <a href="../Home/index.html" class="main-logo"><img src="../images/logo.png" alt="logo"></a>
+                <div class="side-links" id="sideLinks">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul class="list-items">
+                        <li class="list-item"><a href="../Home/index.html">HOME</a></li>
+                        <li class="list-item"><a href="../About/index.html">ABOUT</a></li>
+                        <li class="list-item"><a href="index.html">COURSE</a></li>
+                        <li class="list-item"><a href="../Blog/index.html">BLOG</a></li>
+                        <li class="list-item"><a href="../Contact/index.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Our Courses</h1>
+        </header>
+
+        <main>
+            <section class="courses">
+                <h1>Courses We Offer</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="course-container">
+                    <div class="course">
+                        <h3>Intermediate</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo modi similique odio minus quae rerum ex perspiciatis veniam accusantium, ea hic, maxime voluptates quisquam Minus ter pe reiciendis.</p>
+                    </div>
+                    <div class="course">
+                        <h3>Degree</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo modi similique odio minus quae rerum ex perspiciatis veniam accusantium, ea hic, maxime voluptates quisquam Minus ter pe reiciendis.</p>
+                    </div>
+                    <div class="course">
+                        <h3>Post Graduation</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo modi similique odio minus quae rerum ex perspiciatis veniam accusantium, ea hic, maxime voluptates quisquam Minus ter pe reiciendis.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <h3>Eduford</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit eos minima velit accusamus totam eaque<br />amet consectetur adipisicing eli ut necessitatibus nam veritatis</p>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <h4 class="author">Made with <i class="far fa-heart"></i> by Gurnaj Singh</h4>
+        </footer>
+
+        <!-- Javascript for Hamburger Menu -->
+        <script>
+            var sideLinks=document.getElementById("sideLinks");
+
+            function showMenu()
+            {
+                sideLinks.style.right="0";
+            }
+
+            function hideMenu()
+            {
+                sideLinks.style.right="-200px";
+            }
+        </script>
+    </body>
+</html>
